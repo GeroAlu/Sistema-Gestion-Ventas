@@ -1,0 +1,236 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4e4c0;
+    color: #661a1a;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    background-color: #661a1a;
+    padding: 10px;
+}
+
+nav a {
+    color: #f4e4c0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+h1 {
+    text-align: center;
+}
+
+.input-group {
+    margin: 10px auto;
+    width: 80%;
+    max-width: 400px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    font-size: medium;
+    width: 100%;
+    height: 20px;
+    padding: 8px;
+    border: 2px solid #661a1a;
+    border-radius: 5px;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 2px solid #661a1a;
+    border-radius: 5px;
+}
+
+
+button {
+    background-color: #661a1a;
+    color: #f4e4c0;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    margin: 10px auto;
+}
+
+button:hover {
+    background-color: #8b1e1e;
+}
+
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #661a1a;
+}
+
+#change-details {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#sales-table tbody tr.selected {
+    background-color: #ffdddd;
+}
+
+#total-container {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Estilos para la Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 20px;
+    width: 400px;
+    text-align: initial;
+    border-radius: 10px;
+}
+
+.close {
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.modal-content input {
+        font-size: medium;
+        width: 80%;
+        height: 20px;
+        padding: 8px;
+        border: 2px solid #661a1a;
+        border-radius: 5px;
+}
+
+/* Estilos para la barra de búsqueda */
+#search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 500px;
+    background-color: #fff1e0;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#search-container select,
+#search-container input {
+    font-size: 16px;
+    padding: 8px 12px;
+    margin-right: 10px;
+    border: 2px solid #661a1a;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 150px;
+}
+
+/* Estilos para centrar el texto en el select */
+#search-container select {
+    width: 150px; /* Aseguramos que el select tenga un tamaño fijo */
+    text-align: center; /* Centra el texto dentro del select */
+    text-align-last: center; /* Asegura que el texto seleccionado también quede centrado */
+}
+
+
+#search-container input {
+    width: 200px; /* Ajustamos el tamaño del input */
+}
+
+#search-container button {
+    background-color: #661a1a;
+    color: #fff;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#search-container button:hover {
+    background-color: #8b1e1e;
+}
+
+/* Estilos para cuando el input está vacío o el monto es 0 */
+#search-container input:focus {
+    border-color: #8b1e1e;
+    box-shadow: 0 0 5px rgba(139, 30, 30, 0.6);
+}
+
+/* Estilos para la barra de filtrado */
+#filter-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 500px;
+    background-color: #fff1e0;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#filter-container select {
+    font-size: 16px;
+    padding: 8px 12px;
+    margin-right: 10px;
+    border: 2px solid #661a1a;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 350px;
+}
+
+/* Estilos para centrar el texto en el select */
+#filter-container select {
+    width: 300px; /* Aseguramos que el select tenga un tamaño fijo */
+    text-align: center; /* Centra el texto dentro del select */
+    text-align-last: center; /* Asegura que el texto seleccionado también quede centrado */
+}
+
+#filter-container button {
+    background-color: #661a1a;
+    color: #fff;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#filter-container button:hover {
+    background-color: #8b1e1e;
+}
+
+/* Estilos para cuando el input está vacío o el monto es 0 */
+#filter-container input:focus {
+    border-color: #8b1e1e;
+    box-shadow: 0 0 5px rgba(139, 30, 30, 0.6);
+}

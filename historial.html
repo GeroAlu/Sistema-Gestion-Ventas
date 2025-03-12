@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Historial de Ventas</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="calculadora.html">Calculadora</a></li>
+            <li><a href="ventas.html">Ventas</a></li>
+            <li><a href="historial.html">Historial</a></li>
+        </ul>
+    </nav>
+
+    <h1>Historial de Ventas</h1>
+
+    <div class="input-group">
+        <label for="load-history">Cargar archivo de historial (.json)</label>
+        <input type="file" id="load-history" accept="application/json">
+        <button id="clear-history">Limpiar Tabla</button>
+    </div>
+
+    <table id="history-table">
+        <thead>
+            <tr>
+                <th>Método</th>
+                <th>Importe</th>
+                <th>Producto</th>
+                <th>Fecha</th>
+                <th>Hora</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <div id="total-container">
+        <strong>Total: $<span id="total-sales">0</span></strong>
+    </div>
+
+    <script src="historial.js"></script>
+</body>
+
+</html>
