@@ -118,6 +118,19 @@ th, td {
     cursor: pointer;
 }
 
+<<<<<<< Updated upstream
+=======
+.modal-content button {
+    background-color: #661a1a;
+    color: white;
+    padding: 10px;
+    width: auto;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+>>>>>>> Stashed changes
 .modal-content input {
         font-size: medium;
         width: 80%;
